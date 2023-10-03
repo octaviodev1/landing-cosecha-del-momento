@@ -40,67 +40,6 @@ h1 {
   font-family: var(--font-title);
 }
 
-.body-content {
-  font-family: Arial, sans-serif;
-  background-color: #fc0;
-  margin: 0;
-  height: 100vh;
-  background-image: url("/assets/landing_background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.main-container {
-  margin-top: -5%;
-  max-width: 700px;
-  padding: 20px;
-  text-align: center;
-  background-color: rgb(250 199 22 / 25500%);
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-
-  & h3 {
-    margin: 30px;
-    font-size: 25px;
-  }
-}
-
-.main-button {
-  margin-top: -5%;
-  display: inline-block;
-  margin-left: -20%;
-  padding: 2%;
-  font-weight: bolder;
-  font-size: 30px;
-  background-color: #4caf50;
-  text-decoration: none;
-  border-radius: 15px;
-  color: #fff;
-  transition: background-color 0.3s;
-  animation: pulse 5s infinite;
-
-  &:hover {
-    background-color: #298f2e;
-  }
-}
-
-.logo {
-  --size: 250px;
-
-  width: var(--size);
-  height: var(--size);
-
-  /* &:hover {
-    animation: rotate 5s linear infinite;
-  } */
-}
-
 .top-main {
   background-color: #fc0;
   width: 100%;
@@ -121,4 +60,65 @@ h1 {
     margin: 0;
     text-shadow: 2px 2px 0 white;
   }
+}
+
+.header-content {
+  font-family: Arial, sans-serif;
+  background-color: #fc0;
+  margin: 0;
+  height: 100vh;
+  background-image: url("/assets/landing_background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-main-container {
+  margin-top: -5%;
+  max-width: 700px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(250 199 22 / 25500%);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+
+  & h3 {
+    margin: 30px;
+    font-size: 25px;
+  }
+}
+
+.header-main-button {
+  margin-top: -5%;
+  display: inline-block;
+  margin-left: -20%;
+  padding: 2%;
+  font-weight: bolder;
+  font-size: 30px;
+  background-color: #4caf50;
+  text-decoration: none;
+  border-radius: 15px;
+  color: #fff;
+  transition: background-color 0.3s;
+  animation: pulse 3s infinite;
+
+  &:hover {
+    background-color: #298f2e;
+  }
+}
+
+.logo {
+  --size: 250px;
+
+  width: var(--size);
+  height: var(--size);
+
+  /* &:hover {
+    animation: rotate 5s linear infinite;
+  } */
 }
