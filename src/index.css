@@ -79,7 +79,6 @@ h3 {
 }
 
 .header-content {
-  font-family: Arial, sans-serif;
   background-color: var(--main-color);
   margin: 0;
   height: 100vh;
@@ -97,7 +96,7 @@ h3 {
   max-width: 700px;
   padding: 20px;
   text-align: center;
-  background-color: rgb(250 199 22 / 25500%);
+  background-color: var(--main-color);
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -119,21 +118,33 @@ h3 {
 .container {
   width: 70%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .what-section {
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  & h3 {
-    font-size: var(--font-title);
+  & h2 {
+    font-size: 44px;
+    font-family: var(--font-title);
+  }
+
+  & p {
+    font-size: 1.3rem;
   }
 }
 
 .about-section {
-  background-color: white;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .link-section {
@@ -141,6 +152,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 50vh;
 
   & h3 {
     font-size: 44px;
@@ -215,4 +227,10 @@ h3 {
     width: 100px;
     height: 100px;
   }
+}
+
+.separator {
+  width: 100%;
+  padding: 2px;
+  background: linear-gradient(to right, rgb(255 255 255 / 100%), var(--main-color), rgb(255 255 255 / 100%));
 }
