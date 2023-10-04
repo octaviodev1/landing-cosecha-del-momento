@@ -7,7 +7,7 @@ document.querySelectorAll(".anchor").forEach((link) => {
 
     if (target) {
       target.scrollIntoView({
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
   });
