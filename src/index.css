@@ -26,6 +26,11 @@ body {
   padding: 0;
 }
 
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: var(--font-title);
 }
