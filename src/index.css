@@ -40,6 +40,11 @@ h1 {
   font-family: var(--font-title);
 }
 
+img {
+  width: 100%;
+  height: 100%;
+}
+
 .body-content {
   font-family: Arial, sans-serif;
   background-color: #fc0;
@@ -108,12 +113,12 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 
   & .top-logo {
-    --size: 120px;
+    --size: 250px;
 
     width: var(--size);
-    height: var(--size);
   }
 
   & h1 {
