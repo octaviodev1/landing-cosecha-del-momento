@@ -26,12 +26,9 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-h1 {
+h1,
+h2,
+h3 {
   font-family: var(--font-title);
 }
 
@@ -119,7 +116,12 @@ h1 {
   height: var(--size);
 }
 
-.characteristics-section {
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.what-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,6 +130,10 @@ h1 {
   & h3 {
     font-size: var(--font-title);
   }
+}
+
+.about-section {
+  background-color: white;
 }
 
 .link-section {
