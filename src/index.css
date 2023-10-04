@@ -114,6 +114,17 @@ h1 {
   height: var(--size);
 }
 
+.characteristics-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h3 {
+    font-size: var(--font-title);
+  }
+}
+
 .link-section {
   display: flex;
   flex-direction: column;
@@ -157,29 +168,40 @@ h1 {
   & .left-footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 25px;
+
+    & .colaboration-div {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+
+      & a {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      & .logo-eoi {
+        height: 30px;
+      }
+    }
   }
 
   & .right-footer {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     margin-right: 25px;
   }
 
   & .logo-footer {
     width: 100px;
     height: 100px;
-  }
-}
-
-.characteristics-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & h3 {
-    font-size: var(--font-title);
   }
 }
