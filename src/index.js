@@ -1,7 +1,14 @@
-const option = document.getElementById("desplegable_frutas");
+document.querySelectorAll(".anchor").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
 
-option.addEventListener("change", function () {
-  const eleccion = option.value;
-  console.log(eleccion);
-  return eleccion;
+    const targetId = this.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  });
 });

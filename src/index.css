@@ -78,6 +78,16 @@ h3 {
   }
 }
 
+#what-section,
+#about-section,
+#link-section {
+  scroll-margin-top: 100px;
+}
+
+.smooth-scroll {
+  transition: scroll-behavior 0.5s ease-in-out;
+}
+
 .header-content {
   background-color: var(--main-color);
   margin: 0;
