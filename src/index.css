@@ -210,6 +210,10 @@ img {
   justify-content: space-between;
   padding-top: 10px;
 
+  & .footer-img {
+    width: 30%;
+  }
+
   & .left-footer {
     display: flex;
     flex-direction: column;
