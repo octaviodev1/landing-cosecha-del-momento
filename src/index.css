@@ -26,7 +26,9 @@ body {
   padding: 0;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: var(--font-title);
 }
 
@@ -114,6 +116,21 @@ h1 {
   height: var(--size);
 }
 
+.what-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    width: 70vw;
+  }
+}
+
+.about-section {
+  background-color: var(--main-color);
+}
+
 .link-section {
   display: flex;
   flex-direction: column;
@@ -170,16 +187,5 @@ h1 {
   & .logo-footer {
     width: 100px;
     height: 100px;
-  }
-}
-
-.characteristics-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  & h3 {
-    font-size: var(--font-title);
   }
 }
