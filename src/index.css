@@ -106,3 +106,14 @@ h1 {
     background-color: #298f2e;
   }
 }
+
+.characteristics-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & h3 {
+    font-size: var(--font-title);
+  }
+}
