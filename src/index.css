@@ -102,17 +102,6 @@ p {
   }
 }
 
-#what-section,
-#about-section,
-#link-section {
-  scroll-margin-top: 100px;
-  scroll-padding-top: 500px;
-}
-
-.smooth-scroll {
-  transition: scroll-behavior 0.5s ease-in-out;
-}
-
 .main-section {
   background-color: var(--main-color);
   margin: 0;
@@ -242,12 +231,17 @@ p {
 }
 
 .about-section {
-  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 70px;
   color: var(--font-color);
+
+  & h2 {
+    font-family: var(--font-title);
+    margin: 80px auto;
+  }
 }
 
 .link-section {
