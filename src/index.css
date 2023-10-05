@@ -94,10 +94,27 @@ p {
     font-size: 1.2rem;
     font-weight: bold;
     margin-right: 50px;
-    color: var(--font-color);
 
     &:hover {
-      text-decoration: underline 3px;
+      text-decoration: underline 2px;
+    }
+  }
+
+  & .anchor-section {
+    color: var(--font-color);
+  }
+
+  & .anchor-link {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+
+    /* cursor: pointer; */
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: #298f2e;
     }
   }
 }
