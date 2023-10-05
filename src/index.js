@@ -1,16 +1,22 @@
 // Funcion que hace que las anclas tengan un deslizamiento mas suave
-document.querySelectorAll(".anchor").forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".anchor").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
 
-    const targetId = this.getAttribute("href").substring(1);
-    const target = document.getElementById(targetId);
+      const targetId = this.getAttribute("href").substring(1);
+      const target = document.getElementById(targetId);
 
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
+      if (target) {
+        const headerHeight = 100; // Ajusta esta altura según la altura de tu encabezado
+        const offset = target.getBoundingClientRect().top - headerHeight;
+
+        window.scrollBy({
+          top: offset,
+          behavior: "smooth",
+        });
+      }
+    });
   });
 });
 

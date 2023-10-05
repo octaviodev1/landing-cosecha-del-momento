@@ -90,13 +90,6 @@ img {
   }
 }
 
-#what-section,
-#about-section,
-#link-section {
-  scroll-margin-top: 300px;
-  scroll-padding-top: 500px;
-}
-
 .main-section {
   background-color: var(--main-color);
   margin: 0;
@@ -143,7 +136,6 @@ img {
 }
 
 .what-section {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,13 +146,13 @@ img {
   & h2 {
     font-size: 44px;
     font-family: var(--font-title);
-    margin: 30px auto;
+    margin: 80px auto;
   }
 
   & .what-section-content {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 
     & .what-section-left {
       width: 65%;
