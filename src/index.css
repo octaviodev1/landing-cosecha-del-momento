@@ -93,10 +93,7 @@ img {
 #about-section,
 #link-section {
   scroll-margin-top: 100px;
-}
-
-.smooth-scroll {
-  transition: scroll-behavior 0.5s ease-in-out;
+  scroll-padding-top: 500px;
 }
 
 .main-section {
