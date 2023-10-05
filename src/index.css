@@ -100,7 +100,7 @@ img {
   background-color: var(--main-color);
   margin: 0;
   height: 100vh;
-  background-image: url("/assets/landing_background.jpg");
+  background-image: url("/assets/img/landing_background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
