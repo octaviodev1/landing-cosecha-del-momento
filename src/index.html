@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosecha del Momento</title>
-    <link rel="shortcut icon" href="./assets/calabacita.svg" />
+    <link rel="shortcut icon" href="./assets/icons/calabacita_shortcut.svg" />
     <link rel="stylesheet" href="./index.css" />
     <script type="module" src="./index.js"></script>
   </head>
 
   <body>
-    <header class="top-main">
+    <header class="header">
       <div class="top-logo">
-        <a href="https://cosechadelmomento.netlify.app/">
+        <a class="anchor" href="#main-section">
           <img
             src="assets/icons/diseñologoencabezadolateraliz202x110px.svg"
             alt="logo_cosecha_del_momento"
@@ -26,14 +26,10 @@
       </div>
     </header>
 
-    <section id="main-section" class="header-content">
-      <div class="header-main-container">
+    <section id="main-section" class="main-section">
+      <div class="main-container">
         <a href="https://cosechadelmomento.netlify.app/">
-          <img
-            class="logo"
-            src="assets/valepuedequeesteahorasiesperoqueyanometoquehacermas.svg"
-            alt="logo"
-          />
+          <img class="logo" src="assets/icons/logo_principal.svg" alt="logo" />
         </a>
         <h3>
           Descubre y disfruta de la frescura y el sabor de la estación en
@@ -42,26 +38,35 @@
         </h3>
       </div>
     </section>
-
+    <button class="btn-float">&#8679;</button>
     <div class="container">
       <section id="what-section" class="what-section smooth-scroll">
-        <h2>¿Que es cosecha del momento?</h2>
-        <p>
-          "¡Cosecha del Momento te permite descubrir el frescor de la naturaleza
-          en cada clic! Explora nuestra página de frutas y verduras de temporada
-          y déjate seducir por la explosión de colores y sabores que la Madre
-          Naturaleza tiene para ofrecerte en cada estación. Desde las jugosas
-          fresas primaverales hasta las crujientes manzanas otoñales, te
-          llevamos en un viaje a través de los ciclos de la tierra para que
-          disfrutes de la frescura y vitalidad de cada estación en tu mesa.
-          ¡Bienvenido a un festín visual y culinario que cambiará la forma en
-          que ves la comida!"
-        </p>
-        <p>
-          En nuestra pagina web podras realizar una busqueda por el propio
-          nombre, filtrar solo por verduras o frutas, a traves de las
-          comunidades autonomas o con nuestro calendario.
-        </p>
+        <h2>¿Qué es Cosecha del Momento?</h2>
+        <div class="what-section-content">
+          <div class="what-section-left">
+            <p>
+              "¡Cosecha del Momento te permite descubrir el frescor de la
+              naturaleza en cada clic! Explora nuestra página de frutas y
+              verduras de temporada y déjate seducir por la explosión de colores
+              y sabores que la Madre Naturaleza tiene para ofrecerte en cada
+              estación. Desde las jugosas fresas primaverales hasta las
+              crujientes manzanas otoñales, te llevamos en un viaje a través de
+              los ciclos de la tierra para que disfrutes de la frescura y
+              vitalidad de cada estación en tu mesa. ¡Bienvenido a un festín
+              visual y culinario que cambiará la forma en que ves la comida!"
+            </p>
+            <p>Cosas que podrás hacer en Cosecha del Momento:</p>
+            <ol class="filters-list">
+              <li>Filtrar una búsqueda a través del nombre</li>
+              <li>Filtro específico de solo Verduras o Frutas</li>
+              <li>Filtrar por comunidades autónomas</li>
+              <li>Filtrar a través del calendario</li>
+            </ol>
+          </div>
+          <div class="what-section-right">
+            <img src="./assets/img/mandarinas.png" alt="" />
+          </div>
+        </div>
       </section>
 
       <div class="separator"></div>
@@ -92,7 +97,7 @@
 
       <section id="link-section" class="link-section smooth-scroll">
         <div class="link-section-visit">
-          <h3>¿Quieres visitarnos?</h3>
+          <h3 class="title-link-section">¿Quieres visitarnos?</h3>
           <h4>Accede a nuestra página web pinchando en el siguiente enlace:</h4>
         </div>
         <a href="https://cosechadelmomento.netlify.app/" class="link-button"
@@ -114,15 +119,12 @@
             >
           </p>
           <div class="logo-eoi">
-            <img src="./assets/logo-eoi.png" />
+            <img src="./assets/img/logo-eoi.png" />
           </div>
         </div>
       </div>
       <div class="right-footer">
-        <img
-          class="logo-footer"
-          src="./assets/valepuedequeesteahorasiesperoqueyanometoquehacermas.svg"
-        />
+        <img class="logo-footer" src="./assets/icons/logo_principal.svg" />
         <p>© 2023 Cosecha del momento. Todos los derechos reservados.</p>
       </div>
     </section>

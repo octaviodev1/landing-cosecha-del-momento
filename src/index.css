@@ -18,6 +18,8 @@
 :root {
   --font-title: "IBM Plex Serif", serif;
   --main-color: #fc0;
+  --secondary-color: #4caf50;
+  --font-color: #444;
 }
 
 body {
@@ -49,7 +51,7 @@ p {
   font-size: 1.3rem;
 }
 
-.top-main {
+.header {
   background-color: var(--main-color);
   position: fixed;
   width: 100%;
@@ -84,16 +86,15 @@ p {
 
     & a {
       text-decoration: none;
-      color: black;
     }
   }
 
   & .anchors > a {
-    color: black;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     margin-right: 50px;
+    color: var(--font-color);
 
     &:hover {
       text-decoration: underline 3px;
@@ -112,11 +113,11 @@ p {
   transition: scroll-behavior 0.5s ease-in-out;
 }
 
-.header-content {
+.main-section {
   background-color: var(--main-color);
   margin: 0;
   height: 100vh;
-  background-image: url("/assets/landing_background.jpg");
+  background-image: url("/assets/img/landing_background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -125,7 +126,7 @@ p {
   justify-content: space-around;
 }
 
-.header-main-container {
+.main-container {
   margin-top: -5%;
   max-width: 700px;
   padding: 20px;
@@ -134,6 +135,7 @@ p {
   border-radius: 40px;
   display: flex;
   align-items: center;
+  color: var(--font-color);
 
   & h3 {
     margin: 30px;
@@ -157,12 +159,86 @@ p {
 }
 
 .what-section {
-  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  color: var(--font-color);
+
+  & h2 {
+    font-size: 44px;
+    font-family: var(--font-title);
+    margin: 80px auto;
+  }
+
+  & .what-section-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+
+    & .what-section-left {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+
+      & p {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 20px 40px;
+      }
+
+      & .filters-list {
+        list-style-type: none;
+        counter-reset: custom-counter;
+        padding: 0;
+        margin-left: 50px;
+
+        & li {
+          position: relative;
+          margin-bottom: 10px;
+          padding-left: 30px;
+          font-size: 16px;
+          line-height: 1.6;
+          font-weight: bolder;
+
+          &::before {
+            content: counter(custom-counter);
+            counter-increment: custom-counter;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid var(--secondary-color);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s;
+          }
+
+          &:hover::before {
+            background-color: var(--secondary-color);
+            color: white;
+          }
+        }
+      }
+    }
+
+    & .what-section-right {
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        width: 400px;
+      }
+    }
+  }
 }
 
 .about-section {
@@ -171,6 +247,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--font-color);
 }
 
 .link-section {
@@ -187,7 +264,7 @@ p {
     align-items: center;
     width: 100%;
 
-    & h3 {
+    & .title-link-section {
       font-size: 44px;
       margin: 10px auto;
     }
@@ -202,7 +279,7 @@ p {
     padding: 3.5%;
     font-weight: bolder;
     font-size: 35px;
-    margin: 10px auto;
+    margin: 30px auto 100px;
     background-color: #4caf50;
     text-decoration: none;
     border-radius: 15px;
@@ -221,6 +298,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  color: var(--font-color);
 
   & .footer-img {
     width: 30%;
@@ -239,7 +317,6 @@ p {
       align-items: center;
 
       & a {
-        color: black;
         font-weight: bold;
         text-decoration: none;
 
@@ -277,4 +354,27 @@ p {
       var(--main-color),
       rgb(255 255 255 / 100%)
     );
+}
+
+.btn-float {
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  font-size: 40px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #298f2e;
+  }
+
+  &.active {
+    display: block;
+  }
 }
