@@ -93,7 +93,7 @@ img {
 #what-section,
 #about-section,
 #link-section {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 300px;
   scroll-padding-top: 500px;
 }
 
@@ -154,11 +154,13 @@ img {
   & h2 {
     font-size: 44px;
     font-family: var(--font-title);
+    margin: 30px auto;
   }
 
   & .what-section-content {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 
     & .what-section-left {
       width: 65%;
@@ -167,7 +169,47 @@ img {
 
       & p {
         font-size: 1.3rem;
-        margin: auto 100px;
+        text-align: center;
+        margin: 20px 40px;
+      }
+
+      & .filters-list {
+        list-style-type: none;
+        counter-reset: custom-counter;
+        padding: 0;
+        margin-left: 50px;
+
+        & li {
+          position: relative;
+          margin-bottom: 10px;
+          padding-left: 30px;
+          font-size: 16px;
+          line-height: 1.6;
+          font-weight: bolder;
+
+          &::before {
+            content: counter(custom-counter);
+            counter-increment: custom-counter;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid var(--secondary-color);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color 0.3s;
+          }
+
+          &:hover::before {
+            background-color: var(--secondary-color);
+            color: white;
+          }
+        }
       }
     }
 
@@ -291,42 +333,4 @@ img {
       var(--main-color),
       rgb(255 255 255 / 100%)
     );
-}
-
-.filters-list {
-  list-style-type: none;
-  counter-reset: custom-counter;
-  padding: 0;
-
-  & li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 30px;
-    font-size: 16px;
-    line-height: 1.6;
-    font-weight: bolder;
-
-    &::before {
-      content: counter(custom-counter);
-      counter-increment: custom-counter;
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background-color: white;
-      color: black;
-      text-align: center;
-      border-radius: 50%;
-      border: 1px solid var(--secondary-color);
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      transition: background-color 0.3s;
-    }
-
-    &:hover::before {
-      background-color: var(--secondary-color);
-      color: white;
-    }
-  }
 }
