@@ -18,6 +18,7 @@
 :root {
   --font-title: "IBM Plex Serif", serif;
   --main-color: #fc0;
+  --font-color: #444;
 }
 
 body {
@@ -37,7 +38,7 @@ img {
   height: 100%;
 }
 
-.top-main {
+.header {
   background-color: var(--main-color);
   position: fixed;
   width: 100%;
@@ -72,16 +73,15 @@ img {
 
     & a {
       text-decoration: none;
-      color: black;
     }
   }
 
   & .anchors > a {
-    color: black;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     margin-right: 50px;
+    color: var(--font-color);
 
     &:hover {
       text-decoration: underline 3px;
@@ -99,7 +99,7 @@ img {
   transition: scroll-behavior 0.5s ease-in-out;
 }
 
-.header-content {
+.main-section {
   background-color: var(--main-color);
   margin: 0;
   height: 100vh;
@@ -112,7 +112,7 @@ img {
   justify-content: space-around;
 }
 
-.header-main-container {
+.main-container {
   margin-top: -5%;
   max-width: 700px;
   padding: 20px;
@@ -121,6 +121,7 @@ img {
   border-radius: 40px;
   display: flex;
   align-items: center;
+  color: var(--font-color);
 
   & h3 {
     margin: 30px;
@@ -150,6 +151,7 @@ img {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  color: var(--font-color);
 
   & h2 {
     font-size: 44px;
@@ -167,6 +169,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--font-color);
 }
 
 .link-section {
@@ -176,21 +179,23 @@ img {
   align-items: center;
   height: 50vh;
 
-  & h3 {
+  & .title-link-section {
     font-size: 44px;
-    margin: 10px auto;
+    margin: 30px auto;
+    color: var(--font-color);
   }
 
   & h4 {
     font-size: 24px;
-    margin: 10px auto;
+    margin: 30px auto;
+    color: var(--font-color);
   }
 
   & .link-button {
     padding: 2%;
     font-weight: bolder;
     font-size: 30px;
-    margin: 10px auto;
+    margin: 30px auto;
     background-color: #4caf50;
     text-decoration: none;
     border-radius: 15px;
@@ -209,6 +214,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  color: var(--font-color);
 
   & .footer-img {
     width: 30%;
@@ -227,7 +233,6 @@ img {
       align-items: center;
 
       & a {
-        color: black;
         font-weight: bold;
         text-decoration: none;
 
