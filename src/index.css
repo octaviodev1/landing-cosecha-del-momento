@@ -34,9 +34,21 @@ h3 {
   font-family: var(--font-title);
 }
 
+h2 {
+  --size: 44px;
+
+  font-size: var(--size);
+}
+
 img {
   width: 100%;
   height: 100%;
+}
+
+p {
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  font-size: 1.3rem;
 }
 
 .header {
@@ -88,6 +100,17 @@ img {
       text-decoration: underline 3px;
     }
   }
+}
+
+#what-section,
+#about-section,
+#link-section {
+  scroll-margin-top: 100px;
+  scroll-padding-top: 500px;
+}
+
+.smooth-scroll {
+  transition: scroll-behavior 0.5s ease-in-out;
 }
 
 .main-section {
@@ -230,25 +253,32 @@ img {
 .link-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 50vh;
 
-  & .title-link-section {
-    font-size: 44px;
-    margin: 80px auto 30px;
-    color: var(--font-color);
-  }
+  & .link-section-visit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-  & h4 {
-    font-size: 24px;
-    margin: 30px auto;
-    color: var(--font-color);
+    & .title-link-section {
+      font-size: 44px;
+      margin: 10px auto;
+    }
+
+    & h4 {
+      font-size: 24px;
+      margin: 10px auto;
+    }
   }
 
   & .link-button {
-    padding: 2%;
+    padding: 3.5%;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 35px;
     margin: 30px auto 100px;
     background-color: #4caf50;
     text-decoration: none;
