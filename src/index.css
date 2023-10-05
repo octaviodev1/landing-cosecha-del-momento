@@ -18,6 +18,7 @@
 :root {
   --font-title: "IBM Plex Serif", serif;
   --main-color: #fc0;
+  --secondary-color: #4caf50;
 }
 
 body {
@@ -262,4 +263,42 @@ img {
       var(--main-color),
       rgb(255 255 255 / 100%)
     );
+}
+
+.filters-list {
+  list-style-type: none;
+  counter-reset: custom-counter;
+  padding: 0;
+
+  & li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bolder;
+
+    &::before {
+      content: counter(custom-counter);
+      counter-increment: custom-counter;
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background-color: white;
+      color: black;
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid var(--secondary-color);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: background-color 0.3s;
+    }
+
+    &:hover::before {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+  }
 }
