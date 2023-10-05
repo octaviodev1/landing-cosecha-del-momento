@@ -330,3 +330,21 @@ img {
     }
   }
 }
+
+.btn-float {
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  font-size: 24px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
