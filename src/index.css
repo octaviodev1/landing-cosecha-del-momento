@@ -123,7 +123,7 @@ p {
   background-color: var(--main-color);
   margin: 0;
   height: 100vh;
-  background-image: url("/assets/img/landing_background.jpg");
+  background-image: url("/assets/img/landing_background.webp");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ p {
 }
 
 .main-container {
-  margin-top: -5%;
+  margin-top: 100px;
   max-width: 700px;
   padding: 20px;
   text-align: center;
